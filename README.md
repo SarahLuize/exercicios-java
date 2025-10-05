@@ -3,5 +3,6 @@ Exercícios desenvolvidos durante o curso técnico em Desenvolvimento de Sistema
 
 ## Nota
 * Descompactar arquivos .zip restantes
+* Verificar os arquivos 'Lista 1' provavelmente é C
 * Renomeá-los
 * Se possível, separá-los em pastas
