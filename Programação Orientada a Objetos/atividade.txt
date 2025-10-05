@@ -1,0 +1,35 @@
+Lâmpada
+- Luz: boolean
+- Tipo: String
+- Vidro: boolean
+- Tamanho: float
+- Led: boolean
++ emitirLuz()
++ iluminarAmbiente()
++ possuiLed()
++ queimaLampada()
++ quebraLampada()
+
+Nota fiscal
+- Codigo: int
+- Valor: float
+- Qtde: int
+- Item: String
+- CNPJ: String
++ imprimirDados()
++ calcularTotal()
++ enviaEndereço
++ forneceValores()
++ listarItem()
+
+Sala de aula
+- alunos: int
+- cadeiras: int
+- mesas: int
+- professores: int
+- quadro: int
++ temProfessor()
++ professorEnsina()
++ alunosEstudam()
++ escreverNoQuadro()
++ calcularNotas()
