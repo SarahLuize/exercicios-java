@@ -3,5 +3,6 @@ Exercícios desenvolvidos durante o curso técnico em Desenvolvimento de Sistema
 
 ## Nota
 * Verificar os arquivos 'Lista 1'
+* Apagar arquivos que contenham C
 * Renomeá-los
 * Se possível, separá-los em pastas
