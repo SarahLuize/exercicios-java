@@ -7,6 +7,7 @@ public class Principal {
 	public static void main(String[] args) {
 	int dia = 0;	
 	Scanner teclado = new Scanner(System.in);
+	teclado.close();
 	//ctrl + shift + F
 	//ctrl + shift + O
 	
@@ -15,5 +16,4 @@ public class Principal {
 	
 	System.out.println("Dia: " + dia);
 	}
-
 }
