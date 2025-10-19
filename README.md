@@ -3,8 +3,8 @@
 Exercícios desenvolvidos durante o curso técnico em Desenvolvimento de Sistemas no IFSC, a partir de 12/06/2025, como parte do conteúdo do 3º semestre.
 
 ## Arquivos separados em 7 pastas
- 📁 `001--Java-Puro-Atividades-Simples`
- 📝 – Atividades básicas com lógica e sintaxe Java.
+📁 `001--Java-Puro-Atividades-Simples`
+* 📝 – Atividades básicas com lógica e sintaxe Java.
 
 📁 `OO2--Heranca-e-Polimorfismo`
 * 📝 – Exercícios de orientação a objetos com foco em herança e polimorfismo.
