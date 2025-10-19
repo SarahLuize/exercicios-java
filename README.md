@@ -19,7 +19,8 @@ Exercícios desenvolvidos durante o curso técnico em Desenvolvimento de Sistema
 * 📝 – Implementação e uso de interfaces em Java.
 
 📁 `006--JavaFX`
-* 📝 – Aplicações gráficas simples utilizando JavaFX, incluindo criação de janelas, botões e eventos.
+* 📝 – Interfaces visuais simples utilizando JavaFX, incluindo criação de janelas, botões e eventos.
+* ↳ Inclui exemplos com SceneBuilder na subpasta `001--JavaFX-e-Scenebuilder`.
 
 📁 `007--Atividades-Livro-Computer-Battlegames`
 * 📝 –  Resolução de exercícios baseados no livro "Computer Battlegames", com foco em lógica e estrutura de dados.
