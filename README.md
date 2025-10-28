@@ -21,6 +21,7 @@ Exercícios desenvolvidos durante o curso técnico em Desenvolvimento de Sistema
 📁 `006--JavaFX`
 * 📝 – Interfaces visuais simples utilizando JavaFX, incluindo criação de janelas, botões e eventos.
 * ↳ Inclui exemplos com SceneBuilder na subpasta `001--JavaFX-e-Scenebuilder`.
+* ↳ Inclui exemplos com apenas CSS na subpasta `002--JavaFX-CSS`.
 
 📁 `007--Atividades-Livro-Computer-Battlegames`
 * 📝 –  Resolução de exercícios baseados no livro "Computer Battlegames", com foco em lógica e estrutura de dados.
@@ -28,4 +29,4 @@ Exercícios desenvolvidos durante o curso técnico em Desenvolvimento de Sistema
 ---
  ## Nota para mim mesma
 * Separá-los em pastas para melhor organização.
-* Arquivos adicionados até o dia **`20/10/2025`**
+* Arquivos adicionados até o dia **`21/10/2025`**
