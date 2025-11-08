@@ -30,4 +30,4 @@ Exercícios desenvolvidos durante o curso técnico em Desenvolvimento de Sistema
 ---
  ## Nota para mim mesma
 * Separá-los em pastas para melhor organização.
-* Arquivos adicionados até o dia **`30/10/2025`**
+* Arquivos adicionados até o dia **`07/11/2025`**
