@@ -15,29 +15,30 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 		TipoColecao tipoColecao = null;
 		String sql = "select * from tipo_colecao where id = ?";
 
-		// CONEXAO COM O BANCO
+		// conexão com o banco
 		Connection conexao = null;
 
-		// CRIAR UMA PREPARAÇÃO DE CONSULTA
+		// Criar uma preparação de consulta
 		PreparedStatement stm = null;
 
-		// CRIAR UM OBJETO QUE RECEBA A LISTA DOS DADOS
+		// Criar um objeto que receba a lista dos dados
 		ResultSet rset = null;
 
 		try {
 			conexao = new Conexao().getConnection();
 
 			stm = conexao.prepareStatement(sql);
-			stm.setLong(1, id.intValue());
+			stm.setLong(1, id);
 			rset = stm.executeQuery();
 
 			while (rset.next()) {
 				tipoColecao = new TipoColecao();
 
-				// ATRIBUI O VALOR GUARDADO DE CADA CAMPO PARA ATRIBUTO
-				tipoColecao.setId(id.getLong("id"));
+				// atribui o valor guardado de cada campo para atributo
+				tipoColecao.setId(rset.getLong("id"));
 				tipoColecao.setNome(rset.getString("nome"));
 			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -45,6 +46,7 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 				if (stm != null) {
 					stm.close();
 				}
+
 				if (conexao != null) {
 					conexao.close();
 				}
@@ -52,6 +54,7 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 				e.printStackTrace();
 			}
 		}
+
 		return tipoColecao;
 	}
 
@@ -61,13 +64,13 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 
 		String sql = "select * from tipo_colecao";
 
-		// CONEXAO COM O BANCO
+		// conexão com o banco
 		Connection conexao = null;
 
-		// CRIAR UMA PREPARAÇÃO DE CONSULTA
+		// Criar uma preparação de consulta
 		PreparedStatement stm = null;
 
-		// CRIAR UM OBJETO QUE RECEBA A LISTA DOS DADOS
+		// Criar um objeto que receba a lista dos dados
 		ResultSet rset = null;
 
 		try {
@@ -79,12 +82,13 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 			while (rset.next()) {
 				TipoColecao tipoColecao = new TipoColecao();
 
-				// ATRIBUI O VALOR GUARDADO DE CADA CAMPO PARA ATRIBUTO
+				// atribui o valor guardado de cada campo para atributo
 				tipoColecao.setId(rset.getLong("id"));
 				tipoColecao.setNome(rset.getString("nome"));
 
 				tipoColecoes.add(tipoColecao);
 			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -92,6 +96,7 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 				if (stm != null) {
 					stm.close();
 				}
+
 				if (conexao != null) {
 					conexao.close();
 				}
@@ -99,18 +104,19 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 				e.printStackTrace();
 			}
 		}
+
 		return tipoColecoes;
+
 	}
 
 	@Override
 	public int save(TipoColecao tipoColecao) {
-
 		String sql = "insert into tipo_colecao(nome) values(?)";
 
-		// CONEXAO COM O BANCO
+		// conexão com o banco
 		Connection conexao = null;
 
-		// CRIAR UMA PREPARAÇÃO DE CONSULTA
+		// Criar uma preparação de consulta
 		PreparedStatement stm = null;
 
 		try {
@@ -128,9 +134,11 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 				if (stm != null) {
 					stm.close();
 				}
+
 				if (conexao != null) {
 					conexao.close();
 				}
+
 				return 1;
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -143,10 +151,10 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 	public boolean update(TipoColecao tipoColecao, String[] params) {
 		String sql = "update tipo_colecao set nome = ? where id = ?";
 
-		// CONEXAO COM O BANCO
+		// conexão com o banco
 		Connection conexao = null;
 
-		// CRIAR UMA PREPARAÇÃO DE CONSULTA
+		// Criar uma preparação de consulta
 		PreparedStatement stm = null;
 
 		try {
@@ -165,9 +173,11 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 				if (stm != null) {
 					stm.close();
 				}
+
 				if (conexao != null) {
 					conexao.close();
 				}
+
 				return true;
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -180,10 +190,10 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 	public boolean delete(TipoColecao tipoColecao) {
 		String sql = "delete from tipo_colecao where id = ?";
 
-		// CONEXAO COM O BANCO
+		// conexão com o banco
 		Connection conexao = null;
 
-		// CRIAR UMA PREPARAÇÃO DE CONSULTA
+		// Criar uma preparação de consulta
 		PreparedStatement stm = null;
 
 		try {
@@ -201,9 +211,11 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 				if (stm != null) {
 					stm.close();
 				}
+
 				if (conexao != null) {
 					conexao.close();
 				}
+
 				return true;
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -211,5 +223,4 @@ public class TipoColecaoDAO implements DAO<TipoColecao> {
 		}
 		return false;
 	}
-
 }
